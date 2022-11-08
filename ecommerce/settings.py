@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "core.apps.CoreConfig",
     "widget_tweaks",
     "debug_toolbar",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -151,3 +152,7 @@ AUTHENTICATION_BACKENDS = [
 
 
 SITE_ID = 1
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+LOGIN_REDIRECT_URL = "/"
